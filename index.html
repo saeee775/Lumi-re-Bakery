@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumière Bakery | Artisan Patisserie</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="html" href="collection.html">
+    <link rel="html" href="story.html">
+    <link rel="html" href="careers.html">
+    <link rel="html" href="reservation.html">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Luxe Navbar -->
+    <nav class="navbar">
+        <a href="#" class="logo">Lumière</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>                          <!-- Updated -->
+            <a href="collection.html">Collection</a>               <!-- Changed from #collection -->
+            <a href="story.html">Story</a> 
+            <a href="#contact">Visit Us</a>
+        </div>
+        <button class="order-btn">Reservations</button>
+    </nav>
+
+    <!-- Dreamy Hero -->
+    <section class="hero" id="home">
+        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1674&q=80" alt="Artisan Bakery" class="hero-bg">
+        <div class="hero-content">
+            <h1>Artisan Patisserie Crafted With Passion</h1>
+            <p>Experience the finest French baking traditions with our seasonal creations made from locally-sourced ingredients</p>
+            <button class="hero-btn" onclick="window.location.href='collection.html'">Discover Our Collection</button>
+        </div>
+    </section>
+    
+    <!-- Signature Collection -->
+    <section class="collection" id="collection">
+        <div class="section-header">
+            <p class="section-subtitle">Signature Creations</p>
+            <h2 class="section-title">Our Collection</h2>
+        </div>
+        <div class="pastry-grid">
+            <div class="pastry-card">
+                <img src="https://img.freepik.com/premium-photo/almond-croissant-white-dish_190243-18.jpg?ga=GA1.1.891703107.1746310225&semt=ais_hybrid&w=740" alt="Croissant" class="pastry-img">
+                <div class="pastry-content">
+                    <h3 class="pastry-title">Almond Croissant</h3>
+                    <p class="pastry-desc">Flaky layers filled with almond cream and topped with sliced almonds</p>
+                    <p class="pastry-price">$4.50</p>
+                </div>
+            </div>
+            <div class="pastry-card">
+                <img src="https://img.freepik.com/free-photo/delicious-blueberry-pie-table-top-view_23-2149629030.jpg?ga=GA1.1.891703107.1746310225&semt=ais_hybrid&w=740" alt="Tart" class="pastry-img">
+                <div class="pastry-content">
+                    <h3 class="pastry-title">Berry Tart</h3>
+                    <p class="pastry-desc">Buttery crust with vanilla pastry cream and fresh seasonal berries</p>
+                    <p class="pastry-price">$6.50</p>
+                </div>
+            </div>
+            <div class="pastry-card">
+                <img src="https://img.freepik.com/premium-photo/fresh-baked-artisan-sourdough-bread-with-sourdough-starter-kitchen-countertop_1048944-26146124.jpg?ga=GA1.1.891703107.1746310225&semt=ais_hybrid&w=740" alt="Bread" class="pastry-img">
+                <div class="pastry-content">
+                    <h3 class="pastry-title">Sourdough Loaf</h3>
+                    <p class="pastry-desc">Traditional 36-hour fermented bread with perfect crust</p>
+                    <p class="pastry-price">$8.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="absolute-center-container">
+            <button class="centered-reservation-btn" onclick="window.location.href='reservation.html'">
+                <i class="fas fa-calendar-alt"></i> Reservation
+            </button>
+        </div>
+    
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80" alt="Baker at work">
+        </div>
+        <div class="about-content">
+            <h2 class="about-title">Our Story</h2>
+            <p class="about-text">Founded in Paris in 1985, Lumière brings authentic French baking techniques to every creation. Our head pastry chef, Claire Dubois, trained under Michelin-starred chefs before bringing her artistry to our boutique bakery.</p>
+            <p class="about-text">We source only the finest ingredients - French butter, organic flours, and seasonal fruits - to create pastries that are both visually stunning and unforgettable in taste.</p>
+            <button class="order-btn" onclick="window.location.href='story.html#team'">
+                <i class="fas fa-users"></i> Meet Our Bakers
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <a href="#" class="footer-logo">Lumière</a>
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#collection">Menu</a>
+            <a href="#about">Our Story</a>
+            <a href="#contact">Contact</a>
+            <a rel="html" href="careers.html">Careers</a>
+        </div>
+        <!-- Add this before the footer in index.html -->
+    <section class="contact-section" id="contact">
+        <h2>Visit Us</h2>
+        <div class="contact-info">
+            <p><i class="fas fa-map-marker-alt"></i> 123 Bakery Street, Paris</p>
+            <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+            <p><i class="fas fa-envelope"></i> contact@lumiere.com</p>
+         </div>
+    <iframe src="https://www.google.com/maps/embed?..." width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+</section>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+        </div>
+        <p class="copyright">© 2023 Lumière Bakery. All rights reserved.</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

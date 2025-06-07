@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seasonal Menu | Lumière Bakery</title>
+    <style>
+        :root {
+            --gold: #C6A769;
+            --cream: #F9F5F0;
+            --chocolate: #2A2118;
+            --berry: #8C3A4D;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            background-color: var(--cream);
+            color: var(--chocolate);
+            margin: 0;
+            line-height: 1.6;
+        }
+        
+        /* Header */
+        .menu-header {
+            background: linear-gradient(rgba(42, 33, 24, 0.7), 
+                        url('https://images.unsplash.com/photo-1606787366850-de6330128bfc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80') center/cover;
+            height: 50vh;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            padding: 0 20px;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            color: white;
+            margin: 0 0 10px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        /* Menu Grid */
+        .menu-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .menu-item {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+        
+        .menu-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .menu-content {
+            padding: 20px;
+        }
+        
+        .item-title {
+            font-size: 1.4rem;
+            margin: 0 0 10px;
+            color: var(--chocolate);
+        }
+        
+        .item-price {
+            color: var(--gold);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .menu-header {
+                height: 40vh;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .menu-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="menu-header">
+        <h1>Summer Éclat</h1>
+        <p>Limited Edition Collection</p>
+    </header>
+    
+    <div class="menu-container">
+        <div class="menu-grid">
+            <!-- Item 1 -->
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1558326567-98ae2405596b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400&q=80" 
+                     alt="Citrus Tart" 
+                     class="menu-img">
+                <div class="menu-content">
+                    <h3 class="item-title">Citrus Sunshine Tart</h3>
+                    <p class="item-price">$8.50</p>
+                </div>
+            </div>
+            
+            <!-- Item 2 -->
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400&q=80" 
+                     alt="Berry Cake" 
+                     class="menu-img">
+                <div class="menu-content">
+                    <h3 class="item-title">Berry Chantilly Cake</h3>
+                    <p class="item-price">$9.75</p>
+                </div>
+            </div>
+            
+            <!-- Item 3 -->
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1562440499-64c9a111f713?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400&q=80" 
+                     alt="Lemon Meringue" 
+                     class="menu-img">
+                <div class="menu-content">
+                    <h3 class="item-title">Lemon Meringue Éclair</h3>
+                    <p class="item-price">$7.25</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

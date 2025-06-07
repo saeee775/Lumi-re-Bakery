@@ -1,0 +1,123 @@
+/* cart.css */
+body {
+    background-color: #fdf6f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #5b4636;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    background-color: #fff6eb;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .cart-icon-container {
+    position: relative;
+  }
+  
+  .cart-link {
+    text-decoration: none;
+    color: #5b4636;
+    font-size: 1.2rem;
+    position: relative;
+  }
+  
+  .cart-count {
+    background-color: #d6a77a;
+    color: #fff;
+    font-size: 0.8rem;
+    border-radius: 50%;
+    padding: 2px 6px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+  }
+  
+  .cart-page {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+  }
+  
+  .cart-page h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #7a5c41;
+  }
+  
+  .cart-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .cart-items {
+    flex: 2;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    min-width: 300px;
+  }
+  
+  .cart-summary {
+    flex: 1;
+    background-color: #fff9f3;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    min-width: 250px;
+  }
+  
+  .cart-summary h3 {
+    border-bottom: 2px solid #e0c5a1;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    color: #7a5c41;
+  }
+  
+  .summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.75rem 0;
+    font-size: 1rem;
+    color: #5b4636;
+  }
+  
+  .summary-row.total {
+    font-weight: bold;
+    border-top: 1px solid #d6a77a;
+    padding-top: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .checkout-btn {
+    width: 100%;
+    background-color: #d6a77a;
+    color: #fff;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .checkout-btn:hover {
+    background-color: #b88a62;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .cart-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

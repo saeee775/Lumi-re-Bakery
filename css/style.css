@@ -1,0 +1,537 @@
+/* Modern Elegance */
+:root {
+    --cream: #F9F5F0;
+    --taupe: #D8C4B8;
+    --rose: #E8B4B8;
+    --chocolate: #3A2E28;
+    --gold: #C6A769;
+    --spacing: 12px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--chocolate);
+    background: var(--cream);
+    line-height: 1.6;
+}
+
+/* Luxe Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 8%;
+    position: fixed;
+    width: 100%;
+    background: rgba(249, 245, 240, 0.92);
+    z-index: 1000;
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(216, 196, 184, 0.3);
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--chocolate);
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+}
+
+/* ONLY fix the button visibility - no other changes */
+.navbar {
+    padding-right: 120px; /* Make space for the button */
+}
+
+.reservation-btn {
+    position: absolute;
+    right: 5%; /* Match navbar padding */
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 0;
+}
+
+.nav-links a {
+    color: var(--chocolate);
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--gold);
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: -4px;
+    left: 0;
+    background: var(--gold);
+    transition: width 0.3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+
+
+
+/* 2. Centered button styles */
+.absolute-center-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+    padding: 0 8%;
+}
+
+.centered-reservation-btn {
+    background: var(--gold);
+    color: white;
+    border: none;
+    padding: 14px 35px;
+    border-radius: 30px;
+    font: 600 1.1rem 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.centered-reservation-btn:hover {
+    background: var(--chocolate);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(198,167,105,0.3);
+}
+/* Shift button slightly left */
+.centered-reservation-btn {
+    margin-left: -30px; /* Adjust this value as needed */
+    transform: translateX(-30px) translateY(0); /* Backup method */
+}
+
+/* If using flex container */
+.absolute-center-container {
+    justify-content: center;
+    padding-left: 40px; /* Compensate container padding */
+}
+.centered-reservation-btn {
+    margin-left: -25px !important;
+}
+
+
+/* Add above collection section */
+.collection {
+    position: relative;
+    padding-top: 80px; /* Make space for button */
+}
+
+
+/* Dreamy Hero Section */
+.hero {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.3));
+    z-index: 1;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.9);
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 0 40px;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4.5rem;
+    color: white;
+    margin-bottom: 24px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+    letter-spacing: 2px;
+    line-height: 1.2;
+}
+
+.hero p {
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-btn {
+    background: var(--gold);
+    color: white;
+    border: none;
+    padding: 16px 40px;
+    border-radius: 30px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(198, 167, 105, 0.3);
+}
+
+.hero-btn:hover {
+    background: white;
+    color: var(--chocolate);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(198, 167, 105, 0.4);
+}
+
+/* Signature Collection */
+.collection {
+    padding: 120px 8%;
+    background: white;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: var(--chocolate);
+    margin-bottom: 16px;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    bottom: -8px;
+    left: 25%;
+    background: var(--gold);
+}
+
+.section-subtitle {
+    color: var(--taupe);
+    font-size: 1rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.pastry-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.pastry-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.05);
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.pastry-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.pastry-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.pastry-card:hover .pastry-img {
+    transform: scale(1.03);
+}
+
+.pastry-content {
+    padding: 28px;
+    text-align: center;
+}
+
+.pastry-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: var(--chocolate);
+    margin-bottom: 12px;
+}
+
+.pastry-desc {
+    color: var(--taupe);
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+.pastry-price {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: var(--gold);
+    font-weight: 700;
+}
+
+/* About Section */
+.about {
+    padding: 120px 8%;
+    background: var(--cream);
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.about-img {
+    flex: 1;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+.about-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.about-img:hover img {
+    transform: scale(1.05);
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    color: var(--chocolate);
+    margin-bottom: 24px;
+}
+
+.about-text {
+    color: var(--chocolate);
+    margin-bottom: 32px;
+    line-height: 1.8;
+}
+
+/* Footer */
+footer {
+    background: var(--chocolate);
+    color: var(--cream);
+    padding: 80px 8% 40px;
+    text-align: center;
+}
+
+.footer-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 24px;
+    display: inline-block;
+    color: var(--cream);
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-links a {
+    color: var(--taupe);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--gold);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.social-links a {
+    color: var(--taupe);
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--gold);
+}
+
+.copyright {
+    color: var(--taupe);
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .about {
+        flex-direction: column;
+    }
+    
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+    
+    .nav-links {
+        gap: 24px;
+    }
+    
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+}
+/* Careers Section */
+.careers-hero {
+    background: url('https://images.unsplash.com/photo-1608198093002-ad4e005484ec') center/cover;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 0 8%;
+}
+
+.jobs-section {
+    padding: 80px 8%;
+    display: grid;
+    gap: 30px;
+}
+
+.job-card {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.apply-btn {
+    background: var(--gold);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* Add to Cart Button */
+.add-to-cart {
+    background: var(--gold);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    overflow: hidden;
+}
+
+.add-to-cart:hover {
+    background: var(--chocolate);
+}
+
+.add-text, .added-text {
+    transition: all 0.3s ease;
+}
+
+.added-text i {
+    margin-right: 5px;
+}
+
+/* Cart Item Styling */
+.cart-item {
+    display: flex;
+    gap: 15px;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(216, 196, 184, 0.3);
+}
+
+.cart-item-img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.item-meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.item-price {
+    color: var(--gold);
+    font-weight: 600;
+}
+
+.item-quantity {
+    color: var(--taupe);
+    font-size: 0.9rem;
+}
+
+.item-total {
+    margin-left: auto;
+    font-weight: 600;
+}

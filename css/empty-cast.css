@@ -1,0 +1,33 @@
+.empty-cart {
+    text-align: center;
+    padding: 4rem;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+.empty-cart i {
+    font-size: 4rem;
+    color: #b8860b;
+    margin-bottom: 2rem;
+}
+
+.empty-cart h2 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1rem;
+}
+
+.return-btn {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    background: #b8860b;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.return-btn:hover {
+    background: #a5750a;
+    transform: translateY(-2px);
+}

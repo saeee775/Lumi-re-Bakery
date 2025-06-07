@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumière | Careers</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/career.css">
+</head>
+<body>
+    <!-- Luxe Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">Lumière</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="collection.html">Collection</a>
+            <a href="story.html">Story</a>
+            <a href="careers.html" class="active">Careers</a>
+        </div>
+        <button class="order-btn">
+            <i class="fas fa-shopping-bag"></i> Cart
+            <span class="cart-count">0</span>
+        </button>
+    </nav>
+
+    <!-- Careers Hero -->
+    <section class="careers-hero">
+        <div class="hero-content">
+            <h1>Join Our Team</h1>
+            <p>Bake your career with passion at Lumière</p>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values-section">
+        <div class="section-header">
+            <p class="section-subtitle">Why Join Us</p>
+            <h2 class="section-title">Our Values</h2>
+        </div>
+        <div class="values-grid">
+            <div class="value-card">
+                <i class="fas fa-heart"></i>
+                <h3>Passion First</h3>
+                <p>We only hire those who share our passion for artisan baking</p>
+            </div>
+            <div class="value-card">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Continuous Learning</h3>
+                <p>Weekly masterclasses from our head pastry chef</p>
+            </div>
+            <div class="value-card">
+                <i class="fas fa-seedling"></i>
+                <h3>Sustainable Practices</h3>
+                <p>Ethically sourced ingredients and zero-waste initiatives</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Open Positions -->
+    <section class="positions-section">
+        <div class="section-header">
+            <p class="section-subtitle">Current Opportunities</p>
+            <h2 class="section-title">Open Positions</h2>
+        </div>
+        
+        <div class="position-cards">
+            <!-- Position 1 -->
+            <div class="position-card">
+                <div class="position-header">
+                    <h3>Pastry Chef</h3>
+                    <span class="position-type">Full-time</span>
+                </div>
+                <div class="position-details">
+                    <p><i class="fas fa-map-marker-alt"></i> Paris, France</p>
+                    <p><i class="fas fa-euro-sign"></i> Competitive salary</p>
+                    <p><i class="fas fa-clock"></i> 5+ years experience</p>
+                </div>
+                <div class="position-description">
+                    <p>We're seeking an experienced pastry chef to join our team. You'll be responsible for creating our signature viennoiseries and developing seasonal specials.</p>
+                </div>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+            
+            <!-- Position 2 -->
+            <div class="position-card">
+                <div class="position-header">
+                    <h3>Bakery Assistant</h3>
+                    <span class="position-type">Part-time</span>
+                </div>
+                <div class="position-details">
+                    <p><i class="fas fa-map-marker-alt"></i> Paris, France</p>
+                    <p><i class="fas fa-euro-sign"></i> €15-18/hour</p>
+                    <p><i class="fas fa-clock"></i> 1+ year experience</p>
+                </div>
+                <div class="position-description">
+                    <p>Early morning shifts assisting our bakers with preparation, baking, and maintaining our high cleanliness standards.</p>
+                </div>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+            
+            <!-- Position 3 -->
+            <div class="position-card">
+                <div class="position-header">
+                    <h3>Apprentice Baker</h3>
+                    <span class="position-type">Apprenticeship</span>
+                </div>
+                <div class="position-details">
+                    <p><i class="fas fa-map-marker-alt"></i> Paris, France</p>
+                    <p><i class="fas fa-euro-sign"></i> Stipend provided</p>
+                    <p><i class="fas fa-clock"></i> No experience needed</p>
+                </div>
+                <div class="position-description">
+                    <p>12-month apprenticeship program learning traditional French baking techniques from our master bakers.</p>
+                </div>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Form -->
+    <section class="application-section">
+        <div class="application-container">
+    
+            <div class="application-form">
+                <h2>Application Form</h2>
+                <form id="careersForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required placeholder="Full Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required placeholder="Email Address">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+                    </div>
+                    <div class="form-group">
+                        <select id="position" name="position" required>
+                            <option value="">Select Position</option>
+                            <option value="pastry-chef">Pastry Chef</option>
+                            <option value="bakery-assistant">Bakery Assistant</option>
+                            <option value="apprentice">Apprentice Baker</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="4" placeholder="Why would you like to join our team?"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="resume">Upload Resume</label>
+                        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+                    </div>
+                    <button type="submit" class="submit-btn">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <a href="#" class="footer-logo">Lumière</a>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="collection.html">Menu</a>
+            <a href="story.html">Our Story</a>
+            <a href="careers.html">Careers</a>
+        </div>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+        </div>
+        <p class="copyright">© 2023 Lumière Bakery. All rights reserved.</p>
+    </footer>
+
+    <script src="js/careers.js"></script>
+</body>
+</html>
+<footer>
+    <div class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    
+    <div class="footer-content">
+        <div class="footer-about">
+            <a href="#" class="footer-logo">Lumière</a>
+            <p>Artisan patisserie crafted with passion since 1985. We bring authentic French baking techniques to every creation.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+            </div>
+        </div>
+        
+        <div class="footer-links-container">
+            <h3 class="footer-heading">Quick Links</h3>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="collection.html">Our Collection</a></li>
+                <li><a href="story.html">Our Story</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-contact">
+            <h3 class="footer-heading">Contact Us</h3>
+            <p><i class="fas fa-map-marker-alt"></i> 123 Bakery Street, Paris, France</p>
+            <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+            <p><i class="fas fa-envelope"></i> contact@lumiere.com</p>
+            <p><i class="fas fa-clock"></i> Mon-Sat: 7am-7pm, Sun: 8am-5pm</p>
+        </div>
+        
+        <div class="footer-newsletter">
+            <h3 class="footer-heading">Newsletter</h3>
+            <p>Subscribe for exclusive offers and updates</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit"><i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <div class="legal-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
+        </div>
+        <p class="copyright">© 2023 Lumière Bakery. All rights reserved.</p>
+    </div>
+</footer>
+<header>
+    <nav class="navbar">
+        <a href="index.html" class="logo">Lumière</a>
+        
+        <button class="menu-toggle" aria-label="Menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="collection.html">Collection</a>
+            <a href="story.html">Story</a>
+            <a href="careers.html">Careers</a>
+            <a href="contact.html">Visit Us</a>
+            
+            <button class="order-btn">
+                <i class="fas fa-shopping-bag"></i>
+                Reservations
+                <span class="cart-count">0</span>
+            </button>
+        </div>
+    </nav>
+</header>
+<header class="header-wrapper">
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <span class="logo-icon"></span>
+            Lumière
+        </a>
+
+        <button class="menu-toggle" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <ul class="nav-links">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="collection.html" class="nav-link">Collection</a>
+            </li>
+            <li class="nav-item">
+                <a href="story.html" class="nav-link">Our Story</a>
+            </li>
+            <li class="nav-item">
+                <a href="careers.html" class="nav-link">Careers</a>
+            </li>
+            <li class="nav-item">
+                <a href="contact.html" class="nav-link">Visit Us</a>
+            </li>
+
+            <button class="reservation-btn">
+                <i class="fas fa-calendar-check"></i>
+                Reservations
+                <span class="cart-indicator">0</span>
+            </button>
+        </ul>
+    </nav>
+</header>

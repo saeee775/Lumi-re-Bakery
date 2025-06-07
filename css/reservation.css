@@ -1,0 +1,209 @@
+/* Base Styles */
+:root {
+    --gold: #C6A769;
+    --cream: #F9F5F0;
+    --taupe: #D8C4B8;
+    --chocolate: #3A2E28;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--chocolate);
+    background-color: white;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.reservation-hero {
+    height: 60vh;
+    background: linear-gradient(rgba(58, 46, 40, 0.5), rgba(58, 46, 40, 0.7)), 
+                url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 0 8%;
+}
+
+.reservation-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.reservation-hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+/* Reservation Container */
+.reservation-container {
+    max-width: 1200px;
+    margin: 5rem auto;
+    padding: 0 8%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+/* Form Styles */
+.reservation-form {
+    background: var(--cream);
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.reservation-form::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 150px;
+    height: 150px;
+    background: var(--gold);
+    border-radius: 50%;
+    opacity: 0.1;
+}
+
+.form-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: var(--chocolate);
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+/* Form Elements */
+.form-group {
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.form-input {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid var(--taupe);
+    border-radius: 8px;
+    background: white;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px rgba(198,167,105,0.2);
+}
+
+.form-label {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    color: var(--taupe);
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+    top: -0.8rem;
+    left: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--gold);
+    background: var(--cream);
+    padding: 0 0.5rem;
+}
+
+/* Venue Details */
+.venue-details {
+    background: white;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.decorative-border {
+    position: relative;
+    padding: 2rem;
+}
+
+.decorative-border::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    border: 2px solid var(--gold);
+    border-radius: 15px;
+    z-index: -1;
+}
+
+.details-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: var(--chocolate);
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--taupe);
+}
+
+.detail-item i {
+    color: var(--gold);
+    font-size: 1.2rem;
+    width: 30px;
+}
+
+/* Submit Button */
+.submit-btn {
+    background: var(--gold);
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.submit-btn:hover {
+    background: var(--chocolate);
+    transform: translateY(-2px);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .reservation-container {
+        grid-template-columns: 1fr;
+        padding: 0 5%;
+    }
+    
+    .reservation-form {
+        padding: 2rem;
+    }
+    
+    .reservation-hero h1 {
+        font-size: 2.5rem;
+    }
+}

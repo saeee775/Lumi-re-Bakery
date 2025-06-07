@@ -1,0 +1,155 @@
+/* payment.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fdf6f0;
+    color: #5b4636;
+  }
+  
+  .payment-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  }
+  
+  .payment-header h1 {
+    text-align: center;
+    color: #7a5c41;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .checkout-steps {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .checkout-steps .step {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    background-color: #f2e1cf;
+    color: #5b4636;
+    font-size: 0.95rem;
+  }
+  
+  .checkout-steps .completed {
+    background-color: #d6a77a;
+    color: #fff;
+  }
+  
+  .checkout-steps .active {
+    background-color: #b88a62;
+    color: #fff;
+  }
+  
+  .payment-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .payment-form {
+    flex: 2;
+  }
+  
+  .payment-form h2 {
+    margin-bottom: 1.5rem;
+    color: #7a5c41;
+  }
+  
+  .payment-method {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .method-option {
+    background-color: #fff9f3;
+    padding: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 2px solid transparent;
+    transition: border 0.3s ease;
+  }
+  
+  .method-option.active,
+  .method-option:hover {
+    border-color: #d6a77a;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+  }
+  
+  .form-group input[type="text"] {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  .form-group.checkbox {
+    display: flex;
+    align-items: center;
+  }
+  
+  .form-group.checkbox label {
+    margin-left: 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .complete-order-btn {
+    background-color: #d6a77a;
+    color: white;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .complete-order-btn:hover {
+    background-color: #b88a62;
+  }
+  
+  .order-summary {
+    flex: 1;
+    background-color: #fff9f3;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    min-width: 300px;
+    height: fit-content;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .payment-grid {
+      flex-direction: column;
+    }
+  }
+  
