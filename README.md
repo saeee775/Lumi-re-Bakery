@@ -1,6 +1,4 @@
-Sure! Here is the **complete, polished, ready-to-upload `README.md` file** for your GitHub repository **saeee775/cake-website**.
 
-You can paste this directly into your repo — it is clean, professional, and includes all details about your bakery website.
 
 ---
 
